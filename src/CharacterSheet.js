@@ -29,13 +29,13 @@ export const CharacterSheet = ({ character, handleDecrease, handleIncrease, dele
           ))}
         </div>
 
-        <div style={{width: '50%'}}>
+        <div style={{ width: '50%' }}>
           {Object.keys(CLASS_LIST).map((characterClass) => {
             return (
               <div
                 onClick={() => setSelectedClass(characterClass)}
                 key={characterClass}
-                className={ `${meetsRequirements(characterClass) ? "green" : "red"} class-details`}
+                className={`${meetsRequirements(characterClass) ? "green" : "red"} class-details`}
               >
                 <div>{characterClass}</div>
                 <ul>

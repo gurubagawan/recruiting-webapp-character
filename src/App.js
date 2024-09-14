@@ -92,7 +92,6 @@ function App() {
       if (!response.ok) {
         alert('there was an error saving')
       }
-
       const result = await response.json()
       console.log('success', result)
       alert('Your characters were saved')
