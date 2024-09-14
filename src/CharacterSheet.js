@@ -16,7 +16,7 @@ export const CharacterSheet = ({ character, handleDecrease, handleIncrease, dele
     <div>
 
       <h1>Character Sheet for {character.name}</h1>
-      <button onClick={()=>deleteCharacter(character.name)}>Delete Character</button>
+      <button onClick={deleteCharacter}>Delete Character</button>
       <div style={{ display: 'flex', marginTop: 10 }}>
         <div style={{ width: '50%' }}>
           {ATTRIBUTE_LIST.map((attr) => (

@@ -61,8 +61,8 @@ function App() {
     addNewCharacter(updatedCharacters);
   };
 
-  const deleteCharacter = (characterName) =>{
-    const newCharacterArry = characters.filter((prevCharacter)=> prevCharacter.name !== characterName)
+  const deleteCharacter = (index) => {
+    const newCharacterArry = [...characters.slice(0, index), ...characters.slice(index + 1)];
     addNewCharacter(newCharacterArry)
   }
 
@@ -125,12 +125,12 @@ function App() {
           <button type="submit">Submit</button>
         </form>
 
-        {characters.map((character) => (
+        {characters.map((character, i) => (
           <CharacterSheet
             character={character}
             handleIncrease={handleIncrease}
             handleDecrease={handleDecrease}
-            deleteCharacter={deleteCharacter}
+            deleteCharacter={() => deleteCharacter(i)}
           />))}
 
       </section>
