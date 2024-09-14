@@ -24,6 +24,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
 }
 
 .App-section {
@@ -34,6 +35,24 @@
 
 .App-link {
   color: #61dafb;
+}
+
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.red{
+  background-color: red;
+}
+
+.class-details{
+  padding: 10px; 
+  margin-bottom: 10px
+}
+
+.green{
+  background-color: green;
 }
 
 @keyframes App-logo-spin {

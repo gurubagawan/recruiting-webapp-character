@@ -55,3 +55,14 @@ export const SKILL_LIST = [
     { name: 'Survival', attributeModifier: 'Wisdom' },
 
 ]
+
+export const DEFAULT_ATTRIBUTES = {
+    Strength: 10,
+    Dexterity: 10,
+    Constitution: 10,
+    Intelligence: 10,
+    Wisdom: 10,
+    Charisma: 10,
+}
+
+export const MAX_ATTRIBUTE_POINTS = 70
